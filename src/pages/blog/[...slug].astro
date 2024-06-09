@@ -1,26 +1,39 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
-import BlogPost from '../../layouts/BlogPost.astro';
+import { type CollectionEntry, getCollection } from "astro:content";
+import BlogPost from "../../layouts/BlogPost.astro";
 
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-	return posts.map((post) => ({
-		params: { slug: post.slug },
-		props: post,
-	}));
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
 }
-type Props = CollectionEntry<'blog'>;
+type Props = CollectionEntry<"blog">;
 
 const post = Astro.props;
 const { Content } = await post.render();
 ---
 
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F1MKNEN29F"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-F1MKNEN29F");
+  </script>
+</head>
 <BlogPost {...post.data}>
-	<Content />
+  <Content />
 </BlogPost>
 
 <style>
-	.content {
-		overflow-y: scroll;
-	}
+  .content {
+    overflow-y: scroll;
+  }
 </style>
