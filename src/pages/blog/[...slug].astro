@@ -14,7 +14,9 @@ const post = Astro.props;
 const { Content } = await post.render();
 ---
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1MKNEN29F"
+<head>
+	// @ts-nocheck 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F1MKNEN29F"
   ></script>
   <script>
 	// @ts-nocheck 
@@ -26,6 +28,7 @@ const { Content } = await post.render();
 
     gtag("config", "G-F1MKNEN29F");
   </script>
+</head>
 <BlogPost {...post.data}>
   <Content />
 </BlogPost>
