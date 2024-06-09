@@ -112,7 +112,7 @@ import { Icon } from "astro-icon/components";
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const themeToggle = document.getElementById("themeToggle") as HTMLElement | null;
-    let themePreference: string  = localStorage.getItem("themePreference") || "";
+    let themePreference: string  = localStorage.getItem("theme") || "";
 
     // Set initial icon based on theme preference
     if (themeToggle && themePreference) {
