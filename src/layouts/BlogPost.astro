@@ -19,13 +19,16 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         height: 100%;
         margin: 0;
         padding: 0;
-        overflow: hidden;
+        overflow: visible;
+        margin-bottom: 2em;
       }
       article {
         display: flex;
         flex-direction: column;
 		justify-content: center;
 		align-items: center;
+    overflow: visible;
+    margin-bottom: 2em;
       }
 
       @font-face {
@@ -36,20 +39,21 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         font-display: swap;
       }
       div {
-        flex: 1 0 auto;
         width: calc(100% - 2em);
         max-width: 100%;
         margin: 0;
         border: none;
-        overflow-y: auto;
+        overflow-y: visible;
+        margin-bottom: 2em;
       }
       .content {
         width: 100%;
         height: 100%;
-        overflow-y: auto;
+        overflow-y: visible;
 		padding-top: 2em;
 		display: flex;
 		flex-direction: column;
+    margin-bottom: 2em;
 	}
       .hero-image {
         max-width: 100%;
@@ -63,6 +67,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         width: 800px;
         max-width: calc(100% - 2em);
         color: rgb(var(--gray-dark));
+        overflow-y: visible;
+        margin-bottom: 2em;
+        color: #0156cf;
       }
       .title {
         text-align: center;
@@ -86,6 +93,16 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		justify-content: center;
 		align-items: center;
 	  }
+    .dark {
+      color: #f8f8f8;
+    }
+
+    .footer {
+      position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+    }
 	  
 	  @media (max-width: 400px) {
 		.title h1 {
@@ -123,7 +140,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
           <slot />
         </div>
       </article>
+      <Footer />
     </div>
-    <Footer />
   </body>
 </html>

@@ -20,16 +20,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         align-items: center;
         justify-content: center;
         gap: 0.25em;
-        color: #0156cf;
       }
 
       .port-cont {
-        padding-left: 5em;
-        padding-right: 5em;
+        /* padding-left: 5em;
+        padding-right: 5em; */
+        max-width: calc(100vw - 30%);
+        margin-bottom: 2em;
       }
 
       h5 {
-        color: #0156cf;
       }
 
       /* Added the highlight container and animation */
@@ -114,11 +114,21 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         }
 
         main {
-          max-width: calc(100% - 1em);
+          max-width: calc(100% - 0em);
         }
 
         p {
           font-size: 0.9em;
+        }
+      }
+
+      @media only screen and (max-width: 400px) {
+        main {
+            margin: 0;
+            width: 100vw;
+
+        }
+        .port-cont {
         }
       }
     </style>
