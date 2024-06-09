@@ -5,8 +5,6 @@ pubDate: 'Jun 09 2024'
 heroImage: '/blog-placeholder-about.jpg'
 ---
 
-# Hello, World!
-
 ## Hello, World!
 
 ### Hello, World!
