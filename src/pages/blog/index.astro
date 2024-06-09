@@ -15,19 +15,7 @@ const posts = (await getCollection("blog")).sort(
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F1MKNEN29F"
-    ></script>
-    <script>
-      // @ts-nocheck
 
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-F1MKNEN29F");
-    </script>
     <style>
       main {
         width: calc(100vw - 30%);
@@ -107,6 +95,19 @@ const posts = (await getCollection("blog")).sort(
       }
     </style>
   </head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F1MKNEN29F"
+  ></script>
+  <script>
+    // @ts-nocheck
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-F1MKNEN29F");
+  </script>
   <body>
     <Header />
     <main>
