@@ -31,8 +31,6 @@ const posts = (await getCollection("blog")).sort(
     <style>
       main {
         width: calc(100vw - 30%);
-        overflow-y: scroll;
-        height: 600px;
         margin-top: 1em;
 		margin: auto;
             min-width: calc(100vw - 20%);
@@ -59,7 +57,7 @@ const posts = (await getCollection("blog")).sort(
         text-align: center;
       }
       ul li:first-child img {
-        width: 80%;
+        width: 60%;
       }
       ul li:first-child .title {
         font-size: 2.369rem;
