@@ -30,6 +30,7 @@ title: "Portfolio"
 - Delivered end-to-end, production-ready applications that cater to specific business needs
 
 **Altalance | May 2024 - Present**
+
 *Co-Founder*
 - Spearheaded initial outreach efforts, establishing foundational partnerships crucial to early platform growth.
 - Developed and implemented lean project management strategies, optimizing limited resources for maximum efficiency.
