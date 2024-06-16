@@ -21,7 +21,7 @@ So what it means is a continuous functions (no sharp corners) can be represented
 
 ### A brief note on what they actually mean
 
-KANs like MLPs are also universal approximators. Below I have taken snippets of what I thought was important the base papers explanation.
+KANs like MLPs are also universal approximators. Below I have taken snippets of what I thought was important in the explanations given in the base paper.
 
 KANs are proposed as a promising alternative to MLPs. While MLPs have fixed activation functions on neurons, KANs have learnable activation functions on weights.
 
@@ -35,7 +35,7 @@ Now to be frank I do not understand this beyond a fundamental level but I just H
 
 So I built a classifier with the help of the python package the authors provided along with the paper.
 
-And you know i just had to complicate this because of course I had to, so instead of classifying something simple like mnist numbers I picked a pancreatic cancer dataset.
+And you know i just had to complicate this because doing not easy things is kind of my thing, so instead of classifying something simple like mnist numbers I picked a pancreatic cancer dataset.
 
 So i picked a pancreatic cancer dataset from kaggle. Did a little mode imputing, and used Column Transformation.
 
