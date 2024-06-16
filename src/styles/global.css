@@ -191,7 +191,7 @@ img {
 
 code {
 	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
+	background-color: #e8e8e8;
 	border-radius: 2px;
 }
 
