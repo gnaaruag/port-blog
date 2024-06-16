@@ -1,6 +1,6 @@
 ---
 title: 'Experimenting with Kolmogorov-Arnold Networks'
-description: 'Writing about little experimentation with KANs'
+description: 'A post detailing what KANs are and about the classifiers i wrote in it.'
 pubDate: 'Jun 16 2024'
 heroImage: '/kan.png'
 ---
@@ -33,7 +33,7 @@ KANs have no linear weight matrices at all: instead, each weight parameter is re
 
 Now to be frank I do not understand this beyond a fundamental level but I just HAD to do something with it.
 
-So I built a black box classifier with the help of the python package the authors provided along with the paper.
+So I built a classifier with the help of the python package the authors provided along with the paper.
 
 And you know i just had to complicate this because of course I had to, so instead of classifying something simple like mnist numbers I picked a pancreatic cancer dataset.
 
