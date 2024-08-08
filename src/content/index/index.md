@@ -25,7 +25,7 @@ title: "Portfolio"
 **Freelancing | May 2024 - Present**
 
 *Freelance Software Developer*
-- Developed software used by 500+ customers meant for small business commerce needs
+- Developed software used by 35000+ customers meant for small business commerce needs
 - Delivered scalable, high-quality e-commerce platform with secure payment interfaces
 - Delivered end-to-end, production-ready applications that cater to specific business needs
 
