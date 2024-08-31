@@ -28,7 +28,7 @@ title: "Portfolio"
 - Altalance is a passion project of mine where my team and I build cool software for businesses.
 
 
-**Freelancing | May 2024 - Aug 2024**
+**Freelancing | May 2024 - Jun 2024**
 
 *Freelance Software Developer*
 - Built a end to end e-commerce solution for a small business  
