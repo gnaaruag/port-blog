@@ -1,7 +1,7 @@
 ---
 title: 'I tried optimizing customer wait times in a restaurant'
 description: 'Customer-maxxing using algos, lmao what a nerd right?'
-pubDate: 'Sep 30 2024'
+pubDate: 'Oct 2 2024'
 heroImage: '/rest.png'
 ---
 <div style="display: flex; justify-content: center;">
