@@ -19,19 +19,21 @@ Made this tweet about a week ago, so I am going to follow through and actually t
 
 #### Constraints
 
-Before going to the algo part we will define constraints
+Before we go do the algo part we will define constraints
 
 - Lets say this restaurant has a capacity of 66 people, 
 	- 6x 2 seaters
 	- 5x 4 seaters
 	- 3x 6 seaters
 	- 2x 8 seaters
-- Lets assume the waiting hall has a capacity to hold 60 people
-- Lets assume we get about 100 parties per hour (lets also assume party sizes are random)
-- Lets assume average time a party spends at their table is 45 minutes
+- Lets assume the waiting hall has a capacity to hold 30 people
+- Lets assume we run for about 10 hours a day
+- Lets assume every party spends anywhere from 30 to 90 minutes at their table
 - Lets also assume any incoming party is not willing to wait more than an hour in the waiting hall
 
-so we have G = { g<sub>1</sub>, g<sub>2</sub>, . . , g<sub>n</sub>} representing customer groups where each g<sub>i</sub> = (s<sub>i</sub>, a<sub>i</sub>, d<sub>i</sub>) where s<sub>i</sub> is no of individuals in a party, a<sub>i</sub> is their arrival time and d<sub>i</sub> is their departure time.
+To define this mathematically
+
+so we have G = { g<sub>1</sub>, g<sub>2</sub>, . . , g<sub>n</sub>} representing customer groups where each g<sub>i</sub> = (s<sub>i</sub>, a<sub>i</sub>, d<sub>i</sub>) where s<sub>i</sub> is no. of individuals in a party, a<sub>i</sub> is their arrival time and d<sub>i</sub> is their departure time.
 
 We have three constant terms C<sub>max</sub> i.e. Capacity, W<sub>max</sub> i.e. waiting hall capacity, and M<sub>wait</sub> i.e. the Maximum time a party is willing to wait which we have assumed to be 1 hour.
 
@@ -41,7 +43,7 @@ Finally we have W = Waiting queue represented as { w<sub>1</sub>, w<sub>2</sub>,
 
 #### Best-Fit Assignment 
 
-Now that we have all our constraints laid out lets pick an algorigthm to try to optimize this. The first thing that came to mind is greedy. So I looked around and tried mapping this with an algo, and the easiest way forward seemed like `Best Fit Assignment`
+Now that we have all our constraints laid out lets pick an algorigthm to try to optimize this. The first thing that came to mind is greedy. So I looked around and tried mapping this with an algo, and the easiest way forward seemed like Best Fit Assignment
 
 Best Fit Assignment is a greedy algorithm where we try to minimize wasted capacity when assigning items. We first sort items, find our best fit, assign to resource, repeat til end of input.
 
@@ -92,4 +94,6 @@ I used this algo and simulated a restaurant expecting 100-200 parties for an equ
 - Average parties served per day = 128.32
 - Average parties that left without service = 38.16
 - Average wait time per party = 13.27 min
+
+OK results I would say.
 
