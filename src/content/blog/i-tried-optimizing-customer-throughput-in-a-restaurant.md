@@ -1,5 +1,5 @@
 ---
-title: 'I tried optimizing customer throughput in a restaurant'
+title: 'I tried optimizing customer wait times in a restaurant'
 description: 'Customer-maxxing using algos, lmao what a nerd right?'
 pubDate: 'Sep 30 2024'
 heroImage: '/rest.png'
