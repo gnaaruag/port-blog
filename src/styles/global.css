@@ -224,6 +224,10 @@ hr {
 	main {
 		padding: 1em;
 	}
+
+	pre {
+		font-size: 12px;
+	}
 }
 
 .sr-only {
