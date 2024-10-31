@@ -12,6 +12,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
     <BaseHead title={title} description={description} />
     <style>
       html,
@@ -25,12 +26,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       article {
         display: flex;
         flex-direction: column;
-		justify-content: center;
-		align-items: center;
-    overflow: visible;
-    margin-bottom: 2em;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+        margin-bottom: 2em;
       }
-
+    
       @font-face {
         font-family: "Neue";
         src: url("/fonts/PPNeueMontreal-SemiBoldItalic.otf") format("opentype");
@@ -48,13 +49,15 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       }
       .content {
         width: 100%;
-        height: 100%;
+        max-width: 800px;
+        padding: 0 1em;
+        margin: 0 auto;
         overflow-y: visible;
-		padding-top: 2em;
-		display: flex;
-		flex-direction: column;
-    margin-bottom: 2em;
-	}
+        padding-top: 2em;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2em;
+      }
       .hero-image {
         max-width: 100%;
       }
@@ -64,7 +67,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         border-radius: 12px;
       }
       .prose {
-        width: 800px;
+        width: 100%;
         max-width: calc(100% - 2em);
         color: rgb(var(--gray-dark));
         overflow-y: visible;
@@ -76,6 +79,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         line-height: 1;
         font-size: 3em;
         font-family: "Neue", sans-serif;
+        max-width: 900px; 
+        margin: 0 -1em; 
       }
       .title h1 {
         margin: 0 0 0.5em 0;
@@ -89,29 +94,33 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       .last-updated-on {
         font-style: italic;
       }
-	  .titledate {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	  }
-    .dark {
-      color: #f8f8f8;
-    }
-
-    .footer {
-      position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-    }
-	  
-	  @media (max-width: 768px) {
-		.title {
-			font-size: 1.25em;
-      text-align: center;
-		}
+      .titledate {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .dark {
+        color: #f8f8f8;
+      }
+    
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    
+      @media (max-width: 768px) {
+        .title {
+          font-size: 1.25em;
+          text-align: center;
+          max-width: 100%; /* Restrict width on smaller screens */
+          margin: 0;
+        }
+      }
     </style>
+    
   </head>
 
   <body>
