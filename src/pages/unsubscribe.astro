@@ -41,13 +41,23 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <Header />
     <main class="port-cont neue">
       <h1>Enter your email to stop recieving blog notifs.</h1>
-      <iframe
-        style="border:none;width:100%;"
-        id="untitled-form-wbp7g5-1"
-        src="https://opnform.com/forms/untitled-form-wbp7g5-1"></iframe><script
-        type="text/javascript"
-        onload="initEmbed('untitled-form-wbp7g5-1')"
-        src="https://opnform.com/widgets/iframe.min.js"></script>
+	<div id="loading-animation" style="text-align: center;">
+		<p>Loading...</p>
+	</div>
+	<iframe
+		style="border:none;width:100%;display:none;"
+		id="untitled-form-wbp7g5-1"
+		src="https://opnform.com/forms/untitled-form-wbp7g5-1"></iframe>
+	<script
+		type="text/javascript"
+		onload="initEmbed('untitled-form-wbp7g5-1')"
+		src="https://opnform.com/widgets/iframe.min.js"></script>
+	<script>
+		document.getElementById('untitled-form-wbp7g5-1')!.onload = function() {
+			document.getElementById('loading-animation')!.style.display = 'none';
+			document.getElementById('untitled-form-wbp7g5-1')!.style.display = 'block';
+		};
+	</script>
 
       <Footer />
     </main>

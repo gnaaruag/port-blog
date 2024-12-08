@@ -40,14 +40,21 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   <body>
     <Header />
     <main class="port-cont neue">
-      <h1>Subscribe to my blog.</h1>
-      <iframe
-        style="border:none;width:100%;"
-        id="untitled-form-wbp7g5"
-        src="https://opnform.com/forms/untitled-form-wbp7g5"></iframe><script
-        type="text/javascript"
-        onload="initEmbed('untitled-form-wbp7g5')"
-        src="https://opnform.com/widgets/iframe.min.js"></script>
+      <h1>Subscribe to my blog :)</h1>
+	<div id="iframe-container" style="position: relative;">
+	  <div id="loading-animation" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; justify-content: center; align-items: center;">
+		<p>Loading...</p>
+	  </div>
+	  <iframe
+		style="border:none;width:100%;"
+		id="untitled-form-wbp7g5"
+		src="https://opnform.com/forms/untitled-form-wbp7g5"
+		onload="document.getElementById('loading-animation').style.display='none';"></iframe>
+	  <script
+		type="text/javascript"
+		onload="initEmbed('untitled-form-wbp7g5')"
+		src="https://opnform.com/widgets/iframe.min.js"></script>
+	</div>
 
       <Footer />
     </main>
