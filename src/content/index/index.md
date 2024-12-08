@@ -6,6 +6,7 @@ title: "Portfolio"
 ##### Here's some quick links
 
 - [Here's a link to my blog](/blog)
+- [Subscribe to my blog](/mailing-list)
 - [Here's my resume](https://drive.google.com/drive/folders/192IUKS2oXz8MSwG3qu4JQz4qALNblpy_?usp=drive_link)
 - [Want to hire me for a freelance project?](/freelance)
 

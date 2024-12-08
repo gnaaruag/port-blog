@@ -1,0 +1,55 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={SITE_TITLE + " | Portfolio"}
+      description={SITE_DESCRIPTION}
+    />
+    <style>
+      .port-cont h1 {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 0;
+      }
+
+      .port-cont p {
+        text-align: center;
+      }
+
+      .port-cont {
+        margin-bottom: 0;
+        padding: 0;
+      }
+
+      /* Added the highlight container and animation */
+
+      @media only screen and (max-width: 940px) {
+        .port-cont h1 {
+          font-size: 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main class="port-cont neue">
+      <h1>Subscribe to my blog.</h1>
+      <iframe
+        style="border:none;width:100%;"
+        id="untitled-form-wbp7g5"
+        src="https://opnform.com/forms/untitled-form-wbp7g5"></iframe><script
+        type="text/javascript"
+        onload="initEmbed('untitled-form-wbp7g5')"
+        src="https://opnform.com/widgets/iframe.min.js"></script>
+
+      <Footer />
+    </main>
+  </body>
+</html>
